@@ -1,9 +1,9 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
-import MainPage from './pages/MainPage/MainPage';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainPage from "./pages/MainPage/MainPage";
 
-import './App.css';
-import RentPage from './pages/RentPage/RentPage';
+import "./App.css";
+import RentPage from "./pages/RentPage/RentPage";
 
 const App = () => {
   return (
@@ -11,10 +11,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/rent" element={<RentPage />} />
-        <Route path="/contact" element={<MainPage />} />
+        <Route path="/lend" element={<MainPage />} />
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
