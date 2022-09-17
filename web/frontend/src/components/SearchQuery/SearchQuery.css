@@ -1,0 +1,39 @@
+select option[value=""][disabled] {
+  display: none;
+}
+
+/* place select elements vertically */
+select {
+  display: block;
+  margin: 10px;
+  width: 250px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.query-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.search-button {
+  width: 10%;
+  height: 30px;
+  border: 1px solid #b0c965;
+  border-radius: 4px;
+  background-color: #b0c965;
+  color: #f8f8f8;
+  margin-left: 10px;
+  width: 250px;
+}
+
+.search-query-div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

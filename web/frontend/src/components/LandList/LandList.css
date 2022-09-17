@@ -1,0 +1,14 @@
+.list-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 10px;
+  /* place letters in the center of the div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-list-div {
+    width: 25%;
+}

@@ -1,0 +1,8 @@
+* {
+    font-family: 'NotoSansKR', sans-serif;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url('./assets/fonts/NotoSansKR-Regular.otf') format('opentype');
+}
