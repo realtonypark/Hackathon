@@ -7,7 +7,6 @@ const MainPage = () => {
   return (
     <React.Fragment>
         <MainTitle />
-        <Subtitle />
         <MainPageNav />
     </React.Fragment>
   );

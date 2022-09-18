@@ -8,10 +8,10 @@ const MainPageNav = () => {
     <div className="nav">
       <div className="nav__container">
             <NavLink to="/rent" className="nav__link">
-                빌리기
+                <label className="rent-label">빌리기</label>
             </NavLink>
             <NavLink to="/lend" className="nav__link">
-                빌려주기
+            <label className="lend-label">빌려주기</label>
             </NavLink>
       </div>
     </div>

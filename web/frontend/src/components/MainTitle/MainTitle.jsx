@@ -1,11 +1,13 @@
 import React from "react";
 
+import logo from '../../assets/logo/full.png';
+
 import './MainTitle.css';
 
 const MainTitle = () => {
   return (
     <div>
-      <h1 className="title">팜랜드</h1>
+      <img className="title" src = {logo}></img>
     </div>
   );
 };

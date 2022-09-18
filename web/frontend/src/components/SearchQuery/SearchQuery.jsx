@@ -3,6 +3,7 @@ import axios from "axios";
 
 import "./SearchQuery.css";
 
+const { kakao } = window;
 const SearchQuery = () => {
   const [type, setType] = useState("");
   const [price, setPrice] = useState("");
@@ -86,6 +87,15 @@ const SearchQuery = () => {
   useEffect(() => {
     console.log(detail);
   }, [detail]);
+
+  useEffect(() => {
+    const container = document.getElementById("myMap");
+    const options = {
+      center: new kakao.maps.LatLng(33.450701, 126.570667),
+      level: 3,
+    };
+    const map = new kakao.maps.Map(container, options);
+  }, []);
 
   return (
     <React.Fragment>
@@ -236,9 +246,22 @@ const SearchQuery = () => {
           <h3>계약 희망 기간: {detail.contractTerm}개월</h3>
           <h3>경작물 종류: {detail.type}</h3>
           <h3>설명: {detail.description}</h3>
+          <img src={detail.image}></img>
+          <button className="airbnb">
+            <img src="https://www.pngkey.com/png/full/60-606047_airbnb-logo-white-png-airbnb-logo-png-white.png" className="airbnb-logo" />
+            <br></br><a href="https://www.airbnb.co.kr">
+              AirBnb에서 거주시설 확인하기
+            </a>
+          </button>
+          <button className="johndeere">
+            <img src="https://brandlogos.net/wp-content/uploads/2021/10/john-deere-logo-symbol-vector-512x512.png" className="airbnb-logo" />
+            <br></br><a href="https://www.deere.asia/ko/">
+              John Deere 에서 농기구 구매하기
+            </a>
+          </button>
         </div>
         <div className="map">
-          <h1>map</h1>
+          <div id="myMap" className="map-component"></div>
         </div>
       </div>
     </React.Fragment>

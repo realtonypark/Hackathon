@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage/MainPage";
 
 import "./App.css";
 import RentPage from "./pages/RentPage/RentPage";
+import LendPage from "./pages/LendPage/LendPage";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/rent" element={<RentPage />} />
-        <Route path="/lend" element={<MainPage />} />
+        <Route path="/lend" element={<LendPage />} />
       </Routes>
     </BrowserRouter>
   );
